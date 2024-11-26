@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Registro</title>    
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f4f6; /* Cor de fundo neutra */
+            overflow: hidden;
+        }
+
+        /* Estilo do formulário */
+        .container {
+            text-align: center;
+            width: 280px;
+            background-color: rgba(255, 255, 255, 0.699); /* Fundo levemente transparente */
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do formulário */
+        }
+
+        .container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input {
+            display: block;
+            margin: auto;
+            padding: 10px;
+            width: 260px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #007BFF;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.6); /* Efeito de foco nos campos */
+        }
+
+        button {
+            padding: 12px;
+            width: 100%;
+            background: linear-gradient(135deg, #007BFF, #00aaff); /* Gradiente no botão */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #00aaff, #007BFF); /* Efeito hover no botão */
+            transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3; /* Cor ao passar o mouse no link */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO</h1>
+        <form id="portalRegistro">
+            <input type="text" id="nomeCompleto" placeholder="Nome ou Apelido" required>
+            <br>
+            <input type="email" id="emailRegistro" placeholder="Email" required>
+            <br>
+            <input type="password" id="senhaRegistro" placeholder="Senha" required>
+            <br>
+            <button type="submit"><strong>Cadastrar</strong></button>
+        </form>
+        <br>
+        <a href="login.html">Já tem uma conta? Faça login</a>
+    </div>
+
+    <script>
+        document.getElementById('portalRegistro').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const nome = document.getElementById('nomeCompleto').value;
+            const email = document.getElementById('emailRegistro').value;
+            const senha = document.getElementById('senhaRegistro').value;
+
+            // Salvar os dados no localStorage
+            const usuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            // Salvar no localStorage com a chave sendo o email
+            localStorage.setItem(email, JSON.stringify(usuario));
+
+            alert('Cadastro realizado com sucesso!');
+            window.location.href = "login.html"; // Redireciona para a página de login
+        });
+    </script>
+</body>
+</html>

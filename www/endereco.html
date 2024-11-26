@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Cafeteria Gourmet</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/endereco.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="link2" class="page">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner justify-content-center">
+                        <div class="title ">Endereço</div>
+                        <i class="ri-map-pin-line"></i>
+                    </div>
+                </div>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+                        <div class="container">
+                            <h1>Cadastro de Endereço</h1>
+                                
+                            <!-- Formulário de Cadastro -->
+                            <form id="form-cadastro">
+                                <label for="nome">Nome Completo</label>
+                                <input 
+                                    type="text" 
+                                    id="nome" 
+                                    required 
+                                    maxlength="40" 
+                                    pattern="[A-Za-zÀ-ÿ\s]+" 
+                                    title="O nome deve conter apenas letras e espaços.">
+                            
+                                <label for="rua">Rua</label>
+                                <input 
+                                    type="text" 
+                                    id="rua" 
+                                    required 
+                                    maxlength="50" 
+                                    title="O nome da rua deve ter no máximo 50 caracteres.">
+                            
+                                <label for="numero">Número</label>
+                                <input 
+                                    type="number" 
+                                    id="numero"                                      
+                                    min="0" max="99999" title="O número deve conter até 10 dígitos e apenas números.">
+                            
+                                <label for="bairro">Bairro</label>
+                                <input 
+                                    type="text" 
+                                    id="bairro" 
+                                    required 
+                                    maxlength="30" 
+                                    title="O nome do bairro deve ter no máximo 30 caracteres.">
+                            
+                                <label for="cep">CEP (xxxxx-xxx)</label>
+                                <input 
+                                    type="text" 
+                                    id="cep" 
+                                    required 
+                                    maxlength="9" 
+                                    pattern="\d{5}-\d{3}" 
+                                    title="O CEP deve ter o formato XXXXX-XXX, com apenas números e hífen.">
+                            
+                                <label for="complemento">Complemento (Opcional)</label>
+                                <input 
+                                    type="text" 
+                                    id="complemento" 
+                                    maxlength="30" 
+                                    title="O complemento deve ter no máximo 30 caracteres.">
+                            
+                                <label for="telefone">Telefone (Opcional)</label>
+                                <input 
+                                    type="text" 
+                                    id="telefone" 
+                                    title="Insira um número de telefone válido.">
+                            
+                                <button id="cancelar">Cancelar</button>
+                                <button id="finalizar">Finalizar Pedido!</button>
+                            </form>
+                            
+                        </div>
+                        <script src="js/endereco.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

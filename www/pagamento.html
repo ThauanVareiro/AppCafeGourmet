@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Cafeteria Gourmet</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/pagamento.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="pagamento" class="page">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner justify-content-center">
+                        <div class="title ">Pagamento</div>
+                        <i class="ri-bank-card-line"></i>
+                    </div>
+                </div>
+
+                <!-- Scrollable page content -->
+                <div class="page-content-pagamento">
+                    <div class="block">
+                        <div class="container-pagamento">
+                            <h1>Método de Pagamento</h1>
+                            
+                            <form id="form-pagamento">
+                                <label>
+                                    <input type="radio" name="pagamento" id="pagar-no-recebimento" value="Pagar no recebimento" required>
+                                    Pagar ao receber entrega
+                                </label>
+                    
+                                <button type="button" id="seguir-endereco" disabled>Seguir para Endereço</button>
+                            </form>
+                        </div>
+                    
+                        <script>
+                            // Obtém os elementos necessários
+                            const pagamentoRadio = document.getElementById("pagar-no-recebimento");
+                            const seguirEnderecoBtn = document.getElementById("seguir-endereco");
+                    
+                            // Habilita o botão quando a opção de pagamento for marcada
+                            pagamentoRadio.addEventListener("change", function() {
+                                if (pagamentoRadio.checked) {
+                                    seguirEnderecoBtn.disabled = false; // Habilita o botão
+                                }
+                            });
+                    
+                            // Função para encaminhar o usuário para a página endereco.html
+                            seguirEnderecoBtn.addEventListener("click", function() {
+                                window.location.href = "endereco.html";  // Redireciona para a página endereco.html
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

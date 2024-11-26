@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "imagem": "img/cafe1.png",
+        "nome": "Cappuccino 300ml",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "O cappuccino oferece uma perfeita combinação de café expresso forte, leite vaporizado cremoso e uma espuma de leite leve e delicada. Essa bebida é ideal para quem aprecia o equilíbrio entre o sabor do café e a suavidade do leite. Melhor ocasião: Perfeito para uma pausa à tarde, acompanhando uma conversa tranquila ou para começar o dia com energia, especialmente em momentos de relaxamento.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "1 parte de espresso, 1 parte de leite, 1 parte de espuma"
+            }
+        ],
+        "preco": 19.90,
+        "preco_promocional": 14.90
+    },
+    {
+        "id": 2,
+        "imagem": "img/cafe2.png",
+        "nome": "Caffè Latte 300ml",
+        "principal_caracteristica": "Tradicional",
+        "rating": 3.8,
+        "likes": "94%",
+        "reviews": 15,
+        "descricao": "O Caffè Latte é uma escolha clássica para quem adora café, mas prefere algo mais suave. Com a base de café expresso e uma quantidade generosa de leite vaporizado, resulta em uma bebida cremosa e reconfortante. Melhor ocasião: Ideal para a manhã ou para um momento de calmaria à tarde, acompanhando um bom livro ou uma conversa casual. Também é excelente para quem está começando a se familiarizar com o café.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "1 parte de espresso, 3 partes de leite, finalizado com espuma"
+            }
+        ],
+        "preco": 24.90,
+        "preco_promocional": 19.90
+    },
+    {
+        "id": 3,
+        "imagem": "img/cafe3.png",
+        "nome": "Caffè Mocha 300ml",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.5,
+        "likes": "96%",
+        "reviews": 25,
+        "descricao": "Uma verdadeira delícia para os amantes de chocolate e café, o Caffè Mocha combina café expresso encorpado, leite vaporizado suave e calda de chocolate. A cobertura de chantilly no topo acrescenta um toque extra de indulgência. Melhor ocasião: Perfeito para aqueles dias em que você deseja um prazer extra, seja como uma sobremesa no final de uma refeição ou para uma pausa doce no meio da tarde.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "1 parte de espresso, 1 parte de leite, 1 parte de espuma, 1 parte de chocolate quente"
+            }            
+        ],
+        "preco": 24.90,
+        "preco_promocional": 19.90
+    },
+    {
+        "id": 4,
+        "imagem": "img/cafe4.png",
+        "nome": "Caffè Macchiato 300ml",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "O Caffè Macchiato é para quem adora o sabor puro e forte do café expresso, mas com um toque suave de leite. A quantidade mínima de leite vaporizado dá um toque de suavidade, sem esconder o sabor intenso do café. Melhor ocasião: Ideal para quem gosta de um café mais forte e precisa de um impulso de energia pela manhã ou durante uma tarde de trabalho intenso.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "1 parte de espresso, finalizado com espuma"
+            }
+        ],
+        "preco": 19.90,
+        "preco_promocional": 14.90
+    },
+    {
+        "id": 5,
+        "imagem": "img/cafe5.png",
+        "nome": "Affogato 300ml",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "O Affogato é uma deliciosa sobremesa italiana que mistura a intensidade do café expresso quente com a suavidade e frescor do sorvete de baunilha. Esse contraste quente-frio cria uma experiência única e deliciosa. Melhor ocasião: Perfeito para finalizar uma refeição especial ou como uma indulgência após um longo dia. É um ótimo acompanhamento para uma conversa descontraída com amigos.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "1 parte de espresso, 1 bola de sorvete"
+            }
+        ],
+        "preco": 29.90,
+        "preco_promocional": 24.90
+    },
+    {
+        "id": 6,
+        "imagem": "img/chocolate.png",
+        "nome": "Donut Chocolate",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "O Donut de Chocolate é uma escolha irresistível, com seu sabor doce e crocante, coberto com uma camada generosa de chocolate derretido. A combinação de texturas e sabores faz dessa iguaria um verdadeiro prazer. Melhor ocasião: Ideal para um lanche da tarde, acompanhado de um café ou chá, ou até mesmo como um toque doce em qualquer momento do dia, quando você deseja um prazer instantâneo.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "Massa de donut tradicional, macia e levemente doce com cobertura de chocolate"
+            }
+        ],
+        "preco": 14.90,
+        "preco_promocional": 9.90
+    },
+    {
+        "id": 7,
+        "imagem": "img/festa.png",
+        "nome": "Donut Homero",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "Inspirado no icônico personagem Homero Simpson, o Donut Homero é irresistível, com sua cobertura rosa e granulado colorido. A doçura é o destaque, e cada mordida é um momento de felicidade. Melhor ocasião: Ideal para aqueles momentos de descontração ou celebração, como uma festa ou um encontro descontraído com amigos. É também uma excelente escolha para quem quer agradar as crianças ou se divertir com algo colorido e saboroso.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "Massa de donut tradicional, macia e levemente doce com cobertura de glacê rosa e granulado colorido"
+            }
+        ],
+        "preco": 14.90,
+        "preco_promocional": 9.90
+    },
+    {
+        "id": 8,
+        "imagem": "img/morango.png",
+        "nome": "Donut Morango",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "O Donut de Morango é uma deliciosa opção que combina a suavidade do donut com a doçura do glacê de morango. Decorado com confeitos ou pedaços de frutas, é uma verdadeira explosão de sabor. Melhor ocasião: Perfeito para aqueles dias em que você deseja algo doce e vibrante, seja no café da manhã ou no lanche da tarde. Combina bem com um café leve ou chá gelado.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "Massa de donut tradicional, macia e levemente doce com cobertura de glacê de morango"
+            }
+        ],
+        "preco": 14.90,
+        "preco_promocional": 9.90
+    },
+    {
+        "id": 9,
+        "imagem": "img/waffle.png",
+        "nome": "Waffle de Liège",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "O Waffle é uma massa leve, crocante e deliciosa, que pode ser servida de diversas formas – com frutas frescas, xarope de bordo ou até mesmo coberturas de chocolate. Sua textura única faz dele um verdadeiro clássico das sobremesas. Melhor ocasião: Perfeito para um brunch com amigos ou uma refeição descontraída de fim de semana. Combina bem tanto com bebidas quentes quanto geladas, como um café ou um chá gelado.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "Massa leve, crocante por fora e macia por dentro com cobertura de xarope de bordo (maple syrup)"
+            }
+        ],
+        "preco": 29.90,
+        "preco_promocional": 24.90
+    },
+    {
+        "id": 10,
+        "imagem": "img/croissant.png",
+        "nome": "Croissant Folhado",
+        "principal_caracteristica": "Tradicional",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "O Croissant é uma das delícias mais finas e crocantes que existem. Feito com massa folhada, ele é leve e pode ser servido simples ou recheado com diversos sabores, como chocolate ou amêndoas. Sua textura amanteigada e crocante é um convite ao prazer. Melhor ocasião: Ideal para o café da manhã ou como um lanche refinado no meio da tarde, especialmente acompanhado de um bom café ou chá. O Croissant também é uma excelente opção para quem deseja algo mais leve, porém saboroso, em qualquer hora do dia.",
+        "detalhes": [
+            {
+                "caracteristica": "Arranjo",
+                "detalhes": "Massa folhada, amanteigada e leve, com camadas finas que proporcionam uma textura crocante por fora e macia por dentro"
+            }
+        ],
+        "preco": 24.90,
+        "preco_promocional": 19.90
+    }    
+]

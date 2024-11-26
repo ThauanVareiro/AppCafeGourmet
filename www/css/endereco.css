@@ -1,0 +1,97 @@
+:root {
+  --branco: #ffff;
+  --gelo: #f1f1f1;
+  --verde: #19c463;
+  --preto: #2a2a2a;
+}
+
+/* Estilo para o formulário */
+form#form-cadastro {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Estilo para os campos de entrada (input) */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Alterando a borda dos campos de entrada para cinza */
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Botão "Cancelar" */
+button#cancelar {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  margin-top: 30px;
+}
+
+button#cancelar:hover {
+  background-color: darkred;
+  margin-bottom: 10px;
+}
+
+/* Botão "Finalizar Pedido!" */
+button#finalizar {
+  background-color: var(--verde);
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: large;
+}
+
+button#finalizar:hover {
+  background-color: darkgreen;
+}
+
+/* Ajustes gerais para o layout */
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Estilo para o aviso de campos obrigatórios */
+input[required]:invalid {
+  border-color: red;
+}
+
+/* Foco nos campos: altera a cor da borda ao selecionar */
+form input:focus {
+  border-color: #66afe9; /* Borda azul clara */
+  outline: none; /* Remove o contorno padrão */
+}
+#numero {
+  border: 1px solid #ccc; /* Borda cinza mais escura */
+  border-radius: 8px;
+  padding: 10px 0px;
+  text-align: center;
+}
